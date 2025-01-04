@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const BACKEND_URL = 'https://portfoliobackend-ubbd.onrender.com';
+const BACKEND_URL = process.env.HOST;
 
 export async function POST(req:any) {
   try {
@@ -37,7 +37,6 @@ export async function POST(req:any) {
     if (!response.ok) {
       throw new Error(`Backend responded with status ${response.status}`);
     }
-
     const data = await response.json();
     console.log(data['answer'])
     return NextResponse.json({

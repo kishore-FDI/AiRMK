@@ -3,8 +3,23 @@ import React, { useEffect, useState } from 'react'
 import Header from '@/components/Header/Layout'
 import Settings from '@/components/Settings/layout'
 import ChatScreen from '@/components/Chat/layout'
+import { useSession } from 'next-auth/react'
+import { useData } from '@/components/dataContext'
 const page = () => {
   const [sub,setSub]=useState("hi")
+  // const {data:session}=useSession();
+  // const {username,setUsername}=useData();
+  // useEffect(()=>{
+  //   if(session){
+  //     setUsername((prevData:any)=>({
+  //       ...prevData,
+  //       username:session?.user?.name
+  //     }))
+  //   }
+  //   else{
+  //     return;
+  //   }
+  // },[])
   // useEffect(() => {
   //   const test = async () => {
   //     try {

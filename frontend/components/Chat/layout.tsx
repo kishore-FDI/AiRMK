@@ -31,7 +31,7 @@ const ChatScreen = ({ sub }: { sub: string }) => {
     <section>
       {data && <p>{data}</p>}
       <form onSubmit={handleSubmit} className="mb-6">
-        <div className="bg-black flex rounded-xl">
+        <div className="bg-[#2f2f2f] flex rounded-xl">
           <input
             type="text"
             value={input} 
