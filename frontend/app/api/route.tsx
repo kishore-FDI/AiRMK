@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-
-const BACKEND_URL = process.env.HOST;
+import {SERVER} from "./server.json"
+const BACKEND_URL = SERVER;
 
 export async function POST(req:any) {
   try {
