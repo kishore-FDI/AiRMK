@@ -22,7 +22,7 @@ export async function POST(req:any) {
     //     Chat += ",";
     //   }
     // });
-    // console.log(Chat)
+    // console.log(message)
     
     const response = await fetch(`${BACKEND_URL}/query`, {
       method: 'POST',
