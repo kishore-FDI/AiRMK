@@ -16,7 +16,7 @@ const Settings = ({sub,setSub}: {sub: string, setSub: (sub: string) => void}) =>
             </select>
         </form>
         <h6 className='text-sm flex text-start justify-start'>
-        &#x26A0;Note that this site is currently under developement and testing so in case of an issue please contact the team
+        &#x26A0;Note that this site is currently under developement and testing so in case of an issue please contact the team . Testing
         </h6>
     </section>
   )
